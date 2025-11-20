@@ -1,6 +1,6 @@
 import './App.css';
 import { IconList } from "../components/icon-list"
-import { Topic } from "../components/topic"
+import { SectionTopics } from "../components/section-topics"
 
 function App() {
 
@@ -30,7 +30,8 @@ function App() {
         <section className='flex justify-center z-1 bg-black'>
           <IconList />
         </section>
-        <Topic />
+
+        <SectionTopics />
       </main>
       <footer>
 
