@@ -36,15 +36,37 @@ export function SectionTopics() {
 
     // Organizar rotas
     return (
-        <section className="w-screen">
-            {topics.map((t) => (
-                <Topic 
-                    key={t.id}
-                    id={t.id}
-                    title={t.title}
-                    description={t.description}
-                />
-            ))}
+        <section className="w-screen flex gap-10 flex-col pl-18 pt-10 pb-10">
+            <Topic 
+                key={topics[0].id}
+                title={topics[0].title}
+                id={topics[0].id}
+                description={topics[0].description}
+            />
+            <Topic 
+                key={topics[1].id}
+                title={topics[1].title}
+                id={topics[1].id}
+                description={topics[1].description}
+            />
+            <Topic 
+                key={topics[2].id}
+                title={topics[2].title}
+                id={topics[2].id}
+                description={topics[2].description}
+            />
+            <Topic 
+                key={topics[3].id}
+                title={topics[3].title}
+                id={topics[3].id}
+                description={topics[3].description}
+            />
+            <Topic 
+                key={topics[4].id}
+                title={topics[4].title}
+                id={topics[4].id}
+                description={topics[4].description}
+            />
         </section>
     )
 }

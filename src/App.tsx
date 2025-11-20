@@ -1,21 +1,15 @@
 import './App.css';
 import { IconList } from "../components/icon-list"
 import { SectionTopics } from "../components/section-topics"
+import { Header } from "../components/header"
 
 function App() {
 
   return (
     <>
-      <header className='flex items-center justify-between w-screen fixed top-0 pt-8 pb-8 pl-10 pr-10 bg-transparent' >
-        <h1 className='text-4xl'>
-          Hello, World!
-        </h1>
-        <button className='border rounded-xl border-white cursor-pointer p-3'>
-          Subscribe
-        </button>
-      </header>
+      <Header />
 
-      <main className='h-screen'>
+      <main className='w-screen'>
         <section className='flex gap-4 flex-col justify-center items-center bg-[url("./assets/background.png")] bg-cover bg-no-repeat w-screen h-180 top-0'>
 
           <h1 className='text-4xl z-2'>
@@ -33,8 +27,8 @@ function App() {
 
         <SectionTopics />
       </main>
-      <footer>
-
+      <footer className='w-screen flex justify-center items-center h-15'>
+        <a href="https://github.com/DerickRiso" target='_blank' className='text-left hover:text-blue-500'>Sobre o criador</a>  
       </footer>
     </>
   )
