@@ -16,12 +16,13 @@
   overflow-x: hidden;
 }
 
+
 header {
   transition: background-color 0.2s ease-in-out;
 }
 
 .list-item {
-  @apply flex text-xl gap-4 duration-75 ease-in hover:scale-105 border p-5 w-xs rounded-xl hover:bg-sky-500 hover:text-black;
+  @apply flex text-xl gap-4 duration-75 ease-in hover:scale-105 border w-xs rounded-xl hover:bg-sky-500 hover:text-black;
 }
 
 body {
